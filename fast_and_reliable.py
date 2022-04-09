@@ -1,7 +1,8 @@
 import time
+from collections.abc import Collection
 
 
-def average_runtime(words):
+def average_runtime(words: Collection) -> float:
     """
         The function is used to measure the performance of a data structure-
         it performs a search for the word "zwitterion", in the data structure that the function received,
