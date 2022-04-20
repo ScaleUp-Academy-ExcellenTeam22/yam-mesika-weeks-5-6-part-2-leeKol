@@ -12,10 +12,10 @@ def average_runtime(words: Collection) -> float:
     """
     runtime = 0
     for iteration in range(1000):
-        start = time.time()
+        start_of_search = time.time()
         foo = "zwitterion" in words
-        end = time.time()
-        runtime += end - start
+        end_of_search = time.time()
+        runtime += end_of_search - start_of_search
     return runtime / 1000
 
 
