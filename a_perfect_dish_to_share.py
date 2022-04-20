@@ -3,8 +3,9 @@ from typing import Generator
 
 def perfect_dish_size_to_share() -> Generator[int, None, None]:
     """
-        The function is a generator that infinitely returns sizes of dishes that are considered perfect for share,
-        i.e. a dish that if we sum up all the ways to divide it, we get the size of the dish itself.
+        The function is a generator that infinitely returns sizes of dishes that are considered perfect for share.
+        A dish is considered perfect for share if it holds that when we sum up all the ways to divide it,
+        we get the size of the dish itself.
         :return: The size of a "perfect for share" dish.
     """
     current_dish_size = 2
